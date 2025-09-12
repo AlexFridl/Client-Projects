@@ -1,0 +1,95 @@
+
+FRONTEND:
+---------
++ slike u slideru su razvucene
+
+- skloniti css iz html-a u css fajl gde god vidim da ga ima (pregled_opisTretmana, pregled_oneBlog, oneBlog, opisTretmana,...)
+
+- urediti stranice da budu po class= "col-" i class="row" 
+
+- ubaciti i organizovati novi meni
+	
+
+ADMIN PANEL:
+------------
+
+- admin_panel - administriranje stranice Pravila ponasanja u salonu
+
+- admin_panel - administriranje stranice  Cenovnik
+
+- za TretmanBackendCOntroller metod doAdminPanel_tretmani_insert treba dodati sta ako ne se  ne uploduje fajl
+
+- dodaj tretman ne radi (adminPanel_tretmani_insert)
+
+- keywords i description posle unosa tretmana lica ne prikazuje se u tabeli - na tretmani lica ne pojavljuje se u tabeli
+
+- text stoji u textarei - ukinuti to posebno kod inserta
+
+- pravila Salona - adminPanel stranica
+
+
+REQUESTS:
+---------
+- BlogRequest radi ali ne znam sta radi
+
+- dodati za description i keyword regex u Request-ove - samo required i slova i zarez i space
+
+PODKATEGORIJE:
+--------------
+- prepraviti bazu da moze da podrzi podkategorije za kategorije - tretmani tela => aparaturni tretman => ....
+
+BAZA:
+-----
+- u bazi iz tipe_tremanas izbaciti keywords idescription
+
+- dodati u bazu tabelu podkategorije
+
+- prepraviti deo da tretmani pripadaju podkategorijama a ne tipu tretmana
+
+- ubaciti podatke za novu tabelu podkategorije
+
+COLORS (with color picker):
+
+#9B6627
+#457738
+#F57F20
+#8F6A29
+
+
+
++ podaci izmeni
++ ukinuti ulogu bloger	
++ brisanje tip tretmana - nest nesto 1 (FK ne da da obrise)
++ spakovati Speli tekstove i poslati na mejl
++ tretmani lica naslov heading 4 da upise u tabelu
++ slike na sajtu su iskrivljene
++tip tretnama inesrt linka ne radi jer je ubacen desription
++ tretman insert - Failed to upload picture - radi, treba polja da se dodaju u queryBuilder, 
+	jer sam insert radila preko queryBuilder-a, a update preko eloquenta gde ima veze sa nekom tabelom
+	gde nema veze sa nekom tabelo tamo sam pradila upload preko eloquenta- malo glupavo ali to je bilo
+	tako da bih brze zavrsila posao tj diplomski
+	Trebala sam da napravim veze kod tabela a to mi je tada bilo malo izazovno zbog brzine izrade diplomskog pa sam radila 
+	kako sam brze znala da napravim pre nego da se pomucim da naucim taj deo koji mi fali.
+	
+	Napraviti jedan manji projekat koji ce biti realizovan sa nekoliko tabale, ne tako veliki projekat
+	gde cu sve odraditi preko Eloquenta, i veze i to 1 na vise, vise na vise, i onda realizovati
+	sve CRUD operacije.
+	To je OBVEZAN zadatak.
++ slajder izmeni - Naslov slike nije dobrog formata
++ slajde insert
++ korisnik insert
++ korisnik izmeni - zezanje sa constraint vuce description iz ulogas a ne iz korisniks kada ispisuje u tabeli
++ korisnik insert - Korisnicko ime nije dobrog formata. Mora sadržati najmanje tri karaktera sa velikim pocetnim slovom!
+Lozinka je obavezna! - staviti u regex nesto sto ce biti obavezno za logovanje i prema tome napraviti regex (to primeniti i na update)
++ korisnik izmeni - Korisnicko ime nije dobrog formata. Mora sadržati najmanje tri karaktera sa velikim pocetnim slovom!
+Lozinka je obavezna!
++ blog insert
++ blog izmeni
++ galerija insert
++ galerija izmeni
++ KorisnikRequest nije dobar RI za insert
++ nova stranica tretmani lica => pravila kuce
++ cenovnik kao novi link za tretmane tela i treman lica
++ preview - na admin panelu - za kada se unese tretman i blog
++ ukinuti description i keywords na adminSlider
+

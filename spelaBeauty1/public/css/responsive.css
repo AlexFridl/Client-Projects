@@ -1,0 +1,187 @@
+
+
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+	.dropdown-menu li{ position: relative; 	}
+	.nav-item .submenu{
+		display: none;
+		position: absolute;
+		left:100%; top:-7px;
+	}
+	.nav-item .submenu-left{
+		right:100%; left:auto;
+	}
+	.dropdown-menu > li:hover{ background-color: #f1f1f1 }
+	.dropdown-menu > li:hover > .submenu{ display: block; }
+}
+/* ============ end desktop view// ============ */
+
+
+
+/* ============ small devices ============ */
+@media only screen and (max-width:991px) {
+   #omot {
+        width: 100%;
+    }
+    p, ol, ul, li, h1, h2, h3, h4, h5, h6, strong, a {
+        color: #515828;
+    }
+    p::after{
+        font-weight: bold;
+    }
+   #logo_img{
+        position: relative;
+        float: left;
+        margin-left: 0;
+   }
+    .main_menu {
+        padding: 10px 0;
+    }
+    #nav_accordion{
+        width:30%;
+    }
+    .dropdown-menu .submenu {
+        position: relative; /* za mobilni layout */
+        left: 0;
+        right: 0;
+        width: 70%; /* koristi punu širinu */
+        display: none; /* skrivamo podmeni */
+        background-color: #FFDEAD;
+    }
+    .dropdown-menu .submenu.show{
+        display: block;
+        right:0;
+        position: absolute;
+
+    }
+    .dropdown-menu{
+        margin-left:0.7rem;
+        margin-right:0.7rem;
+        margin-bottom: .5rem;
+    }
+
+
+    .img991px img {
+        float: left;
+        margin: inherit;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        position: relative;
+    }
+
+    #navbarSupportedContent .navbar-nav{
+        background-color: #f1f1f1;
+    }
+
+    .dropdown .dropdown-menu .dropdown-item {
+            color: #152e15 /*4B3049*/ !important;
+        }
+        .dropdown-menu a:hover {
+        background-color: #FFDEAD;
+        color:#152e15;
+        }
+    .dropdown-menu li a {
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        color: #152e15;
+    }
+
+    .slikaPocetna {
+        text-align: center;
+    }
+    .sidebar {
+        background-color: #FFDEAD;
+        margin-bottom: 50px;
+        border-radius: 3px;
+    }
+    .sidebar_nav ul .nav-item .tekst{
+        font-size: 15px;
+        font-family: 'Rubik', sans-serif;
+        color: #515828;
+    }
+
+    .paginacijaTretmani {
+        text-align: center;
+        margin-top: 25px;
+        margin-bottom: 50px;
+    }
+    .about_us_content .about_us_video img{
+        border-radius: 3px;
+    }
+
+    .pagg nav{
+        margin-top:550px;
+        margin-bottom: 50px;
+        margin-left: 250px;
+    }
+    .naslovGalerija {
+        color: #515828;
+        font-size: 0.7em;
+    }
+    /* .ispis1 {
+        width: 900px;
+        margin-left: 50px;
+    } */
+        /*bloger*/
+    .blobBlogera{
+        padding-bottom: 50px;
+        width: 900px;
+        height: 100%;
+        margin: 0px auto;
+    }
+    .tretmaniPoravnanje{
+        margin-left: 50px;
+    }
+    /* .tretmaniPoravnanje {
+        text-align: justify;
+
+    } */
+    .pozadinaSearchBlogerDugme {
+        background: rgba(139, 117, 0, 0.5);
+    }
+    .blogSkracen{
+        width:280px;
+        float: left;
+    }
+    .aktivanNeaktivan .skraceniBlog{
+        text-align: justify;
+    }
+    .paginacijaBlogerSearch {
+        padding-top: 600px;
+        padding-left: 300px;
+    }
+    .naslovAdminTable {
+        color: #515828;
+        /*margin-left: 295px;*/
+        margin-bottom: 50px;
+    }
+    .naslovUnosBlog{
+        width: 500px;
+        /*margin-bottom: 50px;*/
+    }
+    .omotZaUnos{
+        width: 900px;
+        margin: 0px auto;
+        /*margin-left: 100px;*/
+        margin-top: 50px;
+    }
+    .sortByDateBlog{
+        /*margin-left: 600px;*/
+        padding-bottom: 20px;
+    }
+    .dugmeUnos{
+        padding-top:20px;
+        padding-bottom:25px;
+    }
+    .footer_part .social_icon {
+        text-align: left;
+        padding-top: 50px;
+    }
+}
+/* ============ end small devices // ============ */
+
+
+
+
+
